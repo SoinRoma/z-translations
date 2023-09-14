@@ -70,7 +70,7 @@ pytestdebug.log
 
 # Translations
 *.mo
-
+index/migrations
 # Django stuff:
 
 # Flask stuff:
