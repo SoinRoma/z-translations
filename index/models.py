@@ -2,10 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Translation(models.Model):
-    def upload_path(self):
-        return f'files/translation/{self.send_to}/'
+    def upload_path(self, filename):
+        return f'files/translation/{self.send_to}/{filename}'
 
-
+    client_name = models.CharField(max_length=255, null=True, blank=True)
+    client_phone = models.CharField(max_length=255, null=True, blank=True)
+    client_email = models.EmailField(max_length=255, null=True, blank=True)
+    
     from_lang = models.CharField(max_length=255, null=True, blank=True)
     to_lang = models.CharField(max_length=255, null=True, blank=True)
     transfer_type = models.CharField(max_length=255, null=True, blank=True)
@@ -13,9 +16,7 @@ class Translation(models.Model):
     send_to = models.CharField(max_length=255, null=True, blank=True)
 
 class Resume(models.Model):
-    def upload_path(self):
-        return f'files/resume/'
-    file = models.FileField(max_length=255, null=True, blank=True, upload_to=upload_path)
+    file = models.FileField(max_length=255, null=True, blank=True, upload_to='files/resume/')
 
 class ContactInformation(models.Model):
     phone_numbers = models.CharField(max_length=255, null=True, blank=True)
