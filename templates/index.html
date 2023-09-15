@@ -1,0 +1,485 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Z - Translations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/slider/splide.min.css' %}">
+    <link href="https://releases.transloadit.com/uppy/v3.14.1/uppy.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/plugins/popup/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/response.css' %}">
+</head>
+<body>
+<main class="main container-site">
+    <header class="header">
+        <a href="#" class="logo-link">
+            <img src="{% static 'assets/images/logos/Z-Logo.svg' %}" alt="Z-Logo">
+        </a>
+        <ul class="header-links">
+            <li><a href="#type-section">Виды переводов</a></li>
+            <li><a href="#about-section">О компании</a></li>
+            <li><a href="#price-section">Стоимость</a></li>
+            <li><a href="#colab-section">Сотрудничество</a></li>
+            <li><a href="#contact-section">Контакты</a></li>
+        </ul>
+        <div class="header-phones">
+            <a href="#" class="header-phone-link">+998 71 251 05 58</a>
+            <button class="header-phone-btn">Перезвоните мне</button>
+        </div>
+    </header>
+    <div class="main-wrapper">
+        <h1 class="main-title">
+            Устные и письменные переводы <br><span class="main-path">иностранных языков</span>
+        </h1>
+        <div class="main-content">
+            <div class="main-languages-block">
+                <div class="main-language">
+                    <h3>6 языков</h3>
+                    <p>для устных переводов</p>
+                    <div>
+                        <img src="{% static 'assets/images/flags/uz.png' %}" alt="uz">
+                        <img src="{% static 'assets/images/flags/ch.png' %}" alt="ch">
+                        <img src="{% static 'assets/images/flags/kr.png' %}" alt="kr">
+                    </div>
+                </div>
+                <div class="main-language">
+                    <h3>15 языков</h3>
+                    <p>для письменных переводов</p>
+                    <div>
+                        <img src="{% static 'assets/images/flags/en.png' %}" alt="en">
+                        <img src="{% static 'assets/images/flags/fr.png' %}" alt="fr">
+                        <img src="{% static 'assets/images/flags/gr.png' %}" alt="gr">
+                    </div>
+                </div>
+            </div>
+            <p class="main-subtitle">
+                Оказываем лингвистическую поддержку компаниям
+                из Узбекистана, ближнего и дальнего зарубежья помогая
+                им расширять горизонты своего бизнеса
+            </p>
+            <button class="main-price-btn">Узнать стоимость</button>
+        </div>
+        <div class="main-image">
+            <div class="position-relative h-100">
+                <img src="{% static 'assets/images/dialogues/main-dialogue1.png' %}" class="main-d1" alt="dialogue1">
+                <img src="{% static 'assets/images/dialogues/main-dialogue2.png' %}" class="main-d2" alt="dialogue2">
+            </div>
+        </div>
+    </div>
+</main>
+<section id="type-section" class="slider">
+    <div class="container-site">
+        <h5 class="name-section">Отрасли переводов</h5>
+        <div class="slider-title">
+            <h1>Что мы <span>переводим?</span></h1>
+            <div class="slider-btns">
+                <div class="splide_prev">
+                    <img src="{% static 'assets/images/svg/arrow-left.png' %}" class="mr-4" alt="arrow-left">
+                </div>
+                <div class="splide_next">
+                    <img src="{% static 'assets/images/svg/arrow-right.svg' %}" alt="arrow-right">
+                </div>
+            </div>
+        </div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="slide-bg slide-bg1">
+                            <div class="slide-img-container">
+                                <img src="{% static 'assets/images/slides/slide-img1.png' %}" alt="slide-img" class="slide-img">
+                            </div>
+                            <h2 class="slide-title">Юриспруденция</h2>
+                            <p class="slide-subtitle">
+                                Материалами правого и юридического характера
+                            </p>
+                            <ul class="slide-list">
+                                <li><span>Учредительные документы</span></li>
+                                <li><span>Нормативно-правовые акты</span></li>
+                                <li><span>Уголовно-процессуальные документы</span></li>
+                                <li><span>Договоры</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-bg slide-bg2">
+                            <div class="slide-img-container">
+                                <img src="{% static 'assets/images/slides/slide-img2.png' %}" alt="slide-img" class="slide-img">
+                            </div>
+                            <h2 class="slide-title">Технический перевод</h2>
+                            <p class="slide-subtitle">
+                                Перевод научной, научно-технической
+                                и технической литературы и документации
+                                в определенной предметной области
+                            </p>
+                            <ul class="slide-list">
+                                <li><span>Техническая документация</span></li>
+                                <li><span>Техническая литература</span></li>
+                                <li><span>Чертежы и схемы</span></li>
+                                <li><span>Другие технические документы</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="slide-bg slide-bg3">
+                            <div class="slide-img-container">
+                                <img src="{% static 'assets/images/slides/slide-img3.png' %}" alt="slide-img" class="slide-img">
+                            </div>
+                            <h2 class="slide-title">Медицина</h2>
+                            <p class="slide-subtitle">
+                                Вы заказываете из-за рубежа лекарственные препараты, и вам хотелось бы перевести
+                                инструкцию?
+                            </p>
+                            <ul class="slide-list">
+                                <li><span>Инструкции от лекарств</span></li>
+                                <li><span>Справки / заключения от врачей</span></li>
+                                <li><span>Образовательный материал по теме медицины</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-slider-progress">
+                <div class="my-slider-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-section" class="about container-site">
+    <div class="about-wrapper">
+        <h1 class="about-title">о нас</h1>
+        <h2 class="about-subtitle">
+            Расширяем границы <br>
+            вашего бизнеса
+        </h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Бюро переводов Z-Translations было основано 11 августа 2017 года, и с тех пор предоставляет на рынке
+                    Узбекистана услуги языковых переводов. Компания относительно новая, но наши специалисты -
+                    переводчики,
+                    редакторы, менеджеры, каждый имеет за своими плечами многолетний опыт, высокую квалификацию и
+                    глубокие
+                    знания в переводческой отрасли
+                </p>
+                <p>
+                    Мы ставим перед собой целью предоставление клиентам высококачественных услуг, со строгим соблюдением
+                    сроков. Мы знаем, какую ответственность подразумевает доверие клиентов, поэтому прилагаем все
+                    усилия,
+                    чтобы превзойти их ожидания. Каждому проекту – эффективное решение, подбор специализированных
+                    переводчиков и редакторов
+                </p>
+            </div>
+            <div class="about-icons">
+                <div class="about-two-icons">
+                    <div class="about-icon">
+                        <div class="about-circle">
+                            <img src="{% static 'assets/images/svg/lock.svg' %}" alt="icon">
+                        </div>
+                        <h4>Полная <br> конфиденциальность</h4>
+                    </div>
+                    <div class="about-icon">
+                        <div class="about-circle">
+                            <img src="{% static 'assets/images/svg/clock circle.svg' %}" alt="icon">
+                        </div>
+                        <h4>Круглосуточная <br> поддержка</h4>
+                    </div>
+                </div>
+                <div class="about-two-icons">
+                    <div class="about-icon">
+                        <div class="about-circle">
+                            <img src="{% static 'assets/images/svg/user.svg' %}" alt="icon">
+                        </div>
+                        <h4>Назначаем персонального <br> менеджера</h4>
+                    </div>
+                    <div class="about-icon">
+                        <div class="about-circle">
+                            <img src="{% static 'assets/images/svg/collection.svg' %}" alt="icon">
+                        </div>
+                        <h4>Составление глоссария и единства <br> терминологии, стиля перевода</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-wrapper2">
+        <div class="about-name">
+            <p>Виды перевода</p>
+        </div>
+        <div class="about-info">
+            <div class="about-first">
+                <p>
+                    Мы специализируемся на устном
+                    и письменном переводе с различных
+                    иностранных языков
+                </p>
+                <div class="about-flags">
+                    <img src="{% static 'assets/images/flags/16.png' %}" alt="16">
+                    <img src="{% static 'assets/images/flags/en.png' %}" alt="en">
+                    <img src="{% static 'assets/images/flags/gr.png' %}" alt="gr">
+                    <img src="{% static 'assets/images/flags/fr.png' %}" alt="fr">
+                    <img src="{% static 'assets/images/flags/sp.png' %}" alt="sp">
+                    <img src="{% static 'assets/images/flags/it.png' %}" alt="it">
+                    <img src="{% static 'assets/images/flags/tr.png' %}" alt="tr">
+                    <img src="{% static 'assets/images/flags/kr.png' %}" alt="kr">
+                    <img src="{% static 'assets/images/flags/ch.png' %}" alt="ch">
+                </div>
+            </div>
+            <div class="about-b2">
+                <h2 class="b2">B2G</h2>
+                <p>
+                    <strong>Business-to-Government</strong> - взаимоотношения между бизнесом
+                    и государством. Различные виды переводов, в которых нуждаются государственные структуры
+                </p>
+            </div>
+            <div class="about-b2">
+                <h2 class="b2">B2B</h2>
+                <div>
+                    <p>
+                        <strong>Business-to-Business</strong> - взаимоотношения между
+                        коммерческими организациями
+                    </p>
+                    <ul class="slide-list">
+                        <li><span>Крупные компании, крупные проекты</span></li>
+                        <li><span>
+                        Унификация терминологии в рамках проекта, достигается
+                        как работой редакторов, так и применением специальных
+                        программных средств
+                    </span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-b2 b-0">
+                <h2 class="b2">B2C</h2>
+                <p>
+                    <strong>(Business-to-Customer)</strong> - взаимоотношения между организацией
+                    и потребителем. Работа с населением и перевод текстов
+                    и документов «по требованию»
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners">
+    <div class="container-site partners-wrapper">
+        <div class="partners-title">
+            <h1>
+                Нашему переводу <br>
+                <span class="partners-title2">доверяют</span>
+            </h1>
+        </div>
+        <div class="partners-bg">
+            <img src="{% static 'assets/images/dialogues/second-dialogue1.png' %}" class="second-d1" alt="dialogue1">
+            <img src="{% static 'assets/images/dialogues/second-dialogue2.png' %}" class="second-d2" alt="dialogue2">
+        </div>
+        <div class="partners-logos">
+            <div class="logo-block">
+                <img src="{% static 'assets/images/logos/nbu.png' %}" alt="nbu">
+            </div>
+            <div class="logo-block">
+                <img src="{% static 'assets/images/logos/akha.png' %}" alt="akha">
+            </div>
+            <div class="logo-block mr-0">
+                <img src="{% static 'assets/images/logos/volvo.png' %}" alt="volvo">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="price-section" class="price container-site">
+    <p class="price-name">Узнайте стоимость</p>
+    <h1 class="price-title"><span>Стоимость</span> перевода</h1>
+    <p class="price-subtitle">
+        Цены примерные, каждый запрос рассчитывается индивидуально, чтобы узнать точную стоимость - заполните форму ↓
+    </p>
+    <div class="price-content">
+        <form class="price-form">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <label for="name"><img src="{% static 'assets/images/svg/userForm.svg' %}" alt="userForm">Как вас зовут?</label>
+                    <input type="text" id="name" placeholder="Ваше имя" class="form-input">
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="phone"><img src="{% static 'assets/images/svg/phone.svg' %}" alt="phone">Ваш телефон:</label>
+                    <input type="text" id="phone" placeholder="+900 00 000 00 00" class="form-input">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <label for="email"><img src="{% static 'assets/images/svg/message.svg' %}" alt="message">E-mail:</label>
+                    <input type="text" id="email" placeholder="введитевашу@почту.здесь" class="form-input w-100">
+                </div>
+            </div>
+            <div class="mt-5"><img src="{% static 'assets/images/svg/globe.svg' %}" alt="globe" class="mr-2">Выберите язык:</div>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <label>c</label>
+                    <select id="language_from">
+                        <option value="1" data-thumbnail="{% static 'assets/images/flags/uz-select.png' %}">Узбекский</option>
+                        <option value="2" data-thumbnail="{% static 'assets/images/flags/ru-select.png' %}">Русский</option>
+                        <option value="3" data-thumbnail="{% static 'assets/images/flags/uk-select.png' %}">Английский</option>
+                    </select>
+                    <div class="lang-select">
+                        <button class="btn-select" id="change_select1" type="button"></button>
+                        <div class="languages_list" id="list_1">
+                            <ul id="languages_from_list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <label for="language_to">на</label>
+                    <select id="language_to">
+                        <option value="1" data-thumbnail="{% static 'assets/images/flags/uz-select.png' %}">Узбекский</option>
+                        <option value="2" data-thumbnail="{% static 'assets/images/flags/ru-select.png' %}">Русский</option>
+                    </select>
+                    <div class="lang-select">
+                        <button class="btn-select" id="change_select2" type="button"></button>
+                        <div class="languages_list" id="list_2">
+                            <ul id="languages_to_list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <label for="type"><img src="{% static 'assets/images/svg/edit.svg' %}" alt="edit">Тип перевода:</label>
+                    <select id="type">
+                        <option value="1">Письменный перевод</option>
+                        <option value="2">Устный перевод</option>
+                    </select>
+                    <div class="lang-select">
+                        <button class="btn-select" id="change_select3" type="button"></button>
+                        <div class="languages_list" id="list_3">
+                            <ul id="type_list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 mb-2"><img src="{% static 'assets/images/svg/pin.svg' %}" alt="pin" class="mr-2">Прикрепите файл</div>
+            <div id="uppy"></div>
+            <div class="mt-5 mb-2">
+                <img src="{% static 'assets/images/svg/copy-check.svg' %}" alt="copy-check" class="mr-2">
+                Куда вам отправить рассчет?
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <input type="radio" id="radio_phone" name="fav_language" value="HTML">
+                    <label for="radio_phone">По телефону</label>
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="radio" id="radio_tg" name="fav_language" value="CSS">
+                    <label for="radio_tg">В Telegram</label>
+                </div>
+                <div class="col-12 col-md-4">
+                    <input type="radio" id="radio_email" name="fav_language"/>
+                    <label for="radio_email">На почту</label>
+                </div>
+            </div>
+            <button class="form_btn">
+                Получить рассчет
+            </button>
+        </form>
+        <div class="price-list">
+            <div class="price-item">
+                <h4 class="price-item-text">Письменный перевод</h4>
+                <p class="price-item-text2">от 45 000 сўм / страница</p>
+            </div>
+            <div class="price-item">
+                <h4 class="price-item-text">Перевод с нотариальным заверением</h4>
+                <p class="price-item-text2">от 75 000 сўм / документ</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="colab-section" class="cooperation">
+    <div class="container-site d-flex">
+        <div class="coop-left">
+            <p class="cooperation-name">Сотрудничество</p>
+            <h1 class="cooperation-title">
+                Переводчик? <br>
+                <span>— Давай работать</span>
+            </h1>
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <p class="step-text">Скачайте и заполните <a href="#">анкету</a></p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <p class="step-text">Отправьте анкету нам на почту <a href="#">info@uzdm.uz</a></p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <p class="step-text">Готово! Мы свяжемся с вами
+                        для обсуждения условий сотрудничества</p>
+                </div>
+            </div>
+            <p class="cooperation-subtitle">
+                Либо присылайте нам своё резюме ↓
+                (укажите в нем контакты, как с вами связаться)
+            </p>
+            <form class="cooperation-form">
+                <div class="mt-5 mb-2"><img src="{% static 'assets/images/svg/pin.svg' %}" alt="pin" class="mr-2">Прикрепите файл
+                </div>
+                <div id="uppy2"></div>
+                <button class="form_btn2">
+                    Получить рассчет
+                </button>
+            </form>
+        </div>
+        <div class="coop-img">
+            <img src="{% static 'assets/images/dialogues/hands.png' %}" alt="hands" class="hands">
+            <img src="{% static 'assets/images/dialogues/hand-dialogue.png' %}" alt="dialogue" class="hand-d">
+        </div>
+    </div>
+</section>
+<footer id="contact-section" class="contacts container-site">
+    <div class="contacts-content">
+        <div class="contact-info">
+            <h1 class="contact-title">Контакты</h1>
+            <h3 class="contact-phone">+998 71 251 05 58</h3>
+            <a href="#" class="contact-email">info@uzdm.uz</a>
+            <p class="contact-address">
+                Узбекистан, г. Ташкент,
+                Сергелийский р., Сергели-8 А,
+                офис 12/55
+            </p>
+            <p class="contact-detail">
+                ООО "Таржима Маркази"
+                ИНН 305015277
+                ОКЭД 74300
+                Р/с 20208000100793557001
+            </p>
+            <div class="contact-footer">
+                <div class="contact-company">Z-translations | Copyright © 2017 - 2023</div>
+                <div class="altek">
+                    <img src="{% static 'assets/images/logos/altek.svg' %}" alt="altek">
+                    <p>Разработка сайта</p>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8e6223aac9dd0a025d11ca6f90e7387c666f5ff19aa3af0d14c41ac398b4aa&amp;source=constructor"
+                    frameborder="0"></iframe>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'assets/plugins/jquery/jquery.js' %}"></script>
+<script src="{% static 'assets/plugins/bootstrap/bootstrap.js' %}"></script>
+<script src="{% static 'assets/plugins/inputmask/input.mask.js' %}"></script>
+<script src="{% static 'assets/plugins/popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/plugins/slider/splide.min.js' %}"></script>
+<script src="{% static 'assets/plugins/uppy/uppy.min.js' %}"></script>
+<script src="{% static 'assets/plugins/uppy/ru_RU.min.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
