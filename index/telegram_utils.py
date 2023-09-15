@@ -1,5 +1,6 @@
 from django.conf import settings
 import telegram
+
 lang = {
     "English":"🇬🇧",
     "Russian":"🇷🇺",
@@ -20,7 +21,8 @@ From:{}{}
 To: {}{}
 Transfer type: {}
 Send To: {}
-    """
+"""
+
 def send_telegram_message(data):
     bot = telegram.Bot(token=settings.TELEGRAM['bot_token'])
     doc = telegram.InputFile(data.file)
