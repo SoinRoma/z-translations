@@ -17,6 +17,6 @@ class Resume(models.Model):
         return f'files/resume/'
     file = models.FileField(max_length=255, null=True, blank=True, upload_to=upload_path)
 
-class Contacts(models.Model):
+class ContactInformation(models.Model):
     phone_numbers = models.CharField(max_length=255, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
