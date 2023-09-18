@@ -333,10 +333,10 @@ body {
     background-position: top right;
 }
 
-.splide__track{
-    background: url("../images/slides/slide-bg1.png") no-repeat  top left ,
-                url("../images/slides/slide-bg2.png") no-repeat top center,
-                url("../images/slides/slide-bg3.png") no-repeat top right;
+.splide__track {
+    background: url("../images/slides/slide-bg1.png") no-repeat top left,
+    url("../images/slides/slide-bg2.png") no-repeat top center,
+    url("../images/slides/slide-bg3.png") no-repeat top right;
     background-size: auto, auto, auto;
 }
 
@@ -841,12 +841,12 @@ body {
 }
 
 
-.radio-block{
+.radio-block {
     margin-top: 40px;
     margin-bottom: 25px;
 }
 
-.radio-item{
+.radio-item {
     margin-right: 40px;
 }
 
@@ -1003,8 +1003,8 @@ body {
 }
 
 .form_btn2:focus {
-    border: none;
     outline: none;
+    border: 1px solid #5F5F5F;
 }
 
 
@@ -1144,4 +1144,101 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+}
+
+
+/* Popup */
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 90px;
+    max-width: 790px;
+    margin: 0 auto;
+    width: 55%;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+
+.mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+
+.mfp-ready .mfp-with-anim {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.mfp-removing .mfp-with-anim {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+
+.mfp-close,
+.mfp-close:active {
+    font-size: 60px;
+    right: 10px;
+    top: 10px;
+}
+
+.mfp-close-btn-in .mfp-close {
+    right: 40px;
+    color: #E91111;
+    position: absolute;
+    background: transparent;
+    top: 40px;
+    z-index: 9999;
+}
+
+
+.modal-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 65px;
+    margin-bottom: 20px;
+    margin-top: 37px;
+}
+
+.modal-subtitle {
+    color: #3F3F3F;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.modal-btn {
+    display: flex;
+    width: 524px;
+    height: 80px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 90px;
+    background: #E94D11;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.modal-btn:focus{
+    border: none;
+}
+
+.modal-btn:hover{
+    background: #3F3F3F;
+     color: white;
 }
