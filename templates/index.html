@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="{% static 'assets/plugins/slider/splide.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/uppy/uppy.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/popup/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/response.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'assets/css/response.css' %}?v=2">
 </head>
 <body>
 <main class="main container-site">
@@ -336,9 +336,16 @@
                 <div class="col-md-6 col-12">
                     <label>c</label>
                     <select id="language_from">
-                        <option value="1" data-thumbnail="{% static 'assets/images/flags/uz-select.png' %}">Узбекский</option>
-                        <option value="2" data-thumbnail="{% static 'assets/images/flags/ru-select.png' %}">Русский</option>
-                        <option value="3" data-thumbnail="{% static 'assets/images/flags/uk-select.png' %}">Английский</option>
+                        <option value="1" data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">Английский</option>
+                        <option value="2" data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">Узбекский</option>
+                        <option value="3" data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">Русский</option>
+                        <option value="4" data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">Французкий</option>
+                        <option value="5" data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">Испанский</option>
+                        <option value="6" data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">Итальянский</option>
+                        <option value="7" data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">Немецкий</option>
+                        <option value="8" data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">Корейский</option>
+                        <option value="9" data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">Китайский</option>
+                        <option value="10" data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">Турецкий</option>
                     </select>
                     <div class="lang-select">
                         <button class="btn-select" id="change_select1" type="button"></button>
@@ -350,8 +357,16 @@
                 <div class="col-md-6 col-12">
                     <label for="language_to">на</label>
                     <select id="language_to">
-                        <option value="1" data-thumbnail="{% static 'assets/images/flags/uz-select.png' %}">Узбекский</option>
-                        <option value="2" data-thumbnail="{% static 'assets/images/flags/ru-select.png' %}">Русский</option>
+                        <option value="1" data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">Английский</option>
+                        <option value="2" data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">Узбекский</option>
+                        <option value="3" data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">Русский</option>
+                        <option value="4" data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">Французкий</option>
+                        <option value="5" data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">Испанский</option>
+                        <option value="6" data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">Итальянский</option>
+                        <option value="7" data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">Немецкий</option>
+                        <option value="8" data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">Корейский</option>
+                        <option value="9" data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">Китайский</option>
+                        <option value="10" data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">Турецкий</option>
                     </select>
                     <div class="lang-select">
                         <button class="btn-select" id="change_select2" type="button"></button>
@@ -492,6 +507,6 @@
 <script src="{% static 'assets/plugins/slider/splide.min.js' %}"></script>
 <script src="{% static 'assets/plugins/uppy/uppy.min.js' %}"></script>
 <script src="{% static 'assets/plugins/uppy/ru_RU.min.js' %}"></script>
-<script src="{% static 'assets/js/main.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}?v=2"></script>
 </body>
 </html>
