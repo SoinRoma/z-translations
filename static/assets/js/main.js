@@ -59,7 +59,8 @@ function initSelects() {
     $('#language_from option').each(function () {
         const img = $(this).attr("data-thumbnail")
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const value = $(this).val()
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <div><img src="${img}" alt="icon"/><span>${text}</span></div>
                     <img src="./static/assets/images/svg/select-arrow.svg" alt="icon" class="select-arrow" style="width: 10px"/>
                   </li>`
@@ -69,7 +70,8 @@ function initSelects() {
     $('#language_to option').each(function () {
         const img = $(this).attr("data-thumbnail")
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const value = $(this).val()
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <div><img src="${img}" alt="icon"/><span>${text}</span></div>
                     <img src="./static/assets/images/svg/select-arrow.svg" class="select-arrow" alt="icon" style="width: 10px"/>
                   </li>`
@@ -78,7 +80,8 @@ function initSelects() {
 
     $('#type option').each(function () {
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const value = $(this).val()
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <span>${text}</span>
                     <img src="./static/assets/images/svg/select-arrow.svg" class="select-arrow" alt="icon" style="width: 10px"/>
                   </li>`
@@ -97,37 +100,40 @@ function initSelects() {
 //change button stuff on click
     $('#languages_from_list li').click(function () {
         const img = $(this).find('img').attr("src")
-        const value = $(this).find('img').attr('value')
+        const value = $(this).attr('data-value')
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <div><img src="${img}" alt="icon"/><span>${text}</span></div>
                     <img src="./static/assets/images/svg/select-arrow.svg" class="select-arrow" alt="icon" style="width: 10px"/>
                   </li>`
         $('#change_select1').html(item).attr('value', value)
         $("#list_1").toggle()
+        $('#language_from').val(value)
     })
 
     $('#languages_to_list li').click(function () {
         const img = $(this).find('img').attr("src")
-        const value = $(this).find('img').attr('value')
+        const value = $(this).attr('data-value')
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <div><img src="${img}" alt="icon"/><span>${text}</span></div>
                     <img src="./static/assets/images/svg/select-arrow.svg" class="select-arrow" alt="icon" style="width: 10px"/>
                   </li>`
         $('#change_select2').html(item).attr('value', value)
         $("#list_2").toggle()
+        $('#language_to').val(value)
     })
 
     $('#type_list li').click(function () {
-        const value = $(this).find('img').attr('value')
+        const value = $(this).attr('data-value')
         const text = this.innerText
-        const item = `<li class="d-flex justify-content-between w-100">
+        const item = `<li class="d-flex justify-content-between w-100" data-value="${value}">
                     <span>${text}</span>
                     <img src="./static/assets/images/svg/select-arrow.svg" class="select-arrow" alt="icon" style="width: 10px"/>
                   </li>`
         $('#change_select3').html(item).attr('value', value)
         $("#list_3").toggle()
+        $('#type').val(value)
     })
 
     $("#change_select1").click(function () {
@@ -186,6 +192,29 @@ function firstForm() {
 
     $('.price-form').submit((e) => {
         e.preventDefault()
+        const file = uppy.getFiles()
+        if (file.length) {
+            const fileID = file[0].id
+            const obj = {
+                name: $('#name').val(),
+                phone: $('#phone').val().replaceAll(' ', ''),
+                email: $('#email').val(),
+                language_from: $('#language_from').val(),
+                language_to: $('#language_to').val(),
+                type: $('#type').val(),
+                file: file[0],
+                social: $('input[name="fav_language"]:checked').val()
+            }
+
+            console.log(obj)
+            uppy.removeFile(fileID)
+            $.magnificPopup.open({
+                items: {
+                    src: '#modal'
+                },
+                type: 'inline'
+            })
+        }
     })
 }
 
@@ -237,7 +266,7 @@ function secondForm() {
 }
 
 $("#phone").inputmask({
-   "mask": "+998 dd ddd dd dd"
+    "mask": "+998 dd ddd dd dd"
 });
 
 $(".closeBtn").click(function () {
