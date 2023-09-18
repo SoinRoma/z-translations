@@ -166,19 +166,23 @@ function initFiles() {
   })
   uppy.use(Uppy.Dashboard,{
     target: '#uppy',
-    maxNumberOfFiles: 1,
     inline: true,
     allowMultipleUploadBatches: false,
     width: '524px',
     height: '200px',
     hideUploadButton: true,
-    hideRetryButton: true,
-    hidePauseResumeButton: true,
     hideProgressAfterFinish: true,
     hideCancelButton: true,
     disableInformer: true,
     disableStatusBar: true,
     disableThumbnailGenerator: true,
+    locale: {
+      strings: {
+        dropPasteFiles: `
+        Перетащите документ сюда или %{browseFiles} его
+        `
+      }
+    }
   })
 
   const uppy2 = new Uppy.Uppy({
@@ -189,7 +193,6 @@ function initFiles() {
   })
   uppy2.use(Uppy.Dashboard,{
     target: '#uppy2',
-    maxNumberOfFiles: 1,
     inline: true,
     allowMultipleUploadBatches: false,
     width: '524px',
@@ -202,6 +205,13 @@ function initFiles() {
     disableInformer: true,
     disableStatusBar: true,
     disableThumbnailGenerator: true,
+    locale: {
+      strings: {
+        dropPasteFiles: `
+        Перетащите документ сюда или %{browseFiles} его
+        `
+      }
+    }
   })
 }
 

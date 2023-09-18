@@ -9,11 +9,12 @@
     <title>Z - Translations</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'assets/images/logos/Z-Logo.svg' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/slider/splide.min.css' %}">
-    <link href="https://releases.transloadit.com/uppy/v3.14.1/uppy.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/plugins/uppy/uppy.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/popup/magnific-popup.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/response.css' %}">
@@ -26,10 +27,22 @@
         </a>
         <ul class="header-links">
             <li><a href="#type-section">Виды переводов</a></li>
-            <li><a href="#about-section">О компании</a></li>
-            <li><a href="#price-section">Стоимость</a></li>
-            <li><a href="#colab-section">Сотрудничество</a></li>
-            <li><a href="#contact-section">Контакты</a></li>
+            <li><a href="#about-section">
+                <span class="dot"></span>
+                О компании
+            </a></li>
+            <li><a href="#price-section">
+                <span class="dot"></span>
+                Стоимость
+            </a></li>
+            <li><a href="#colab-section">
+                <span class="dot"></span>
+                Сотрудничество
+            </a></li>
+            <li><a href="#contact-section">
+                <span class="dot"></span>
+                Контакты
+            </a></li>
         </ul>
         <div class="header-phones">
             <a href="#" class="header-phone-link">+998 71 251 05 58</a>
@@ -66,7 +79,7 @@
                 из Узбекистана, ближнего и дальнего зарубежья помогая
                 им расширять горизонты своего бизнеса
             </p>
-            <button class="main-price-btn">Узнать стоимость</button>
+            <a href="#price-section" class="main-price-btn">Узнать стоимость</a>
         </div>
         <div class="main-image">
             <div class="position-relative h-100">
@@ -213,7 +226,7 @@
     </div>
     <div class="about-wrapper2">
         <div class="about-name">
-            <p>Виды перевода</p>
+            <h5>Виды перевода</h5>
         </div>
         <div class="about-info">
             <div class="about-first">
@@ -365,20 +378,20 @@
             </div>
             <div class="mt-5 mb-2"><img src="{% static 'assets/images/svg/pin.svg' %}" alt="pin" class="mr-2">Прикрепите файл</div>
             <div id="uppy"></div>
-            <div class="mt-5 mb-2">
+            <div class="radio-block">
                 <img src="{% static 'assets/images/svg/copy-check.svg' %}" alt="copy-check" class="mr-2">
                 Куда вам отправить рассчет?
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4">
+            <div class="d-flex">
+                <div class="radio-item">
                     <input type="radio" id="radio_phone" name="fav_language" value="HTML">
                     <label for="radio_phone">По телефону</label>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="radio-item">
                     <input type="radio" id="radio_tg" name="fav_language" value="CSS">
                     <label for="radio_tg">В Telegram</label>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="radio-item">
                     <input type="radio" id="radio_email" name="fav_language"/>
                     <label for="radio_email">На почту</label>
                 </div>
@@ -431,7 +444,7 @@
                 </div>
                 <div id="uppy2"></div>
                 <button class="form_btn2">
-                    Получить рассчет
+                    Отправить резюме
                 </button>
             </form>
         </div>
@@ -462,7 +475,7 @@
                 <div class="contact-company">Z-translations | Copyright © 2017 - 2023</div>
                 <div class="altek">
                     <img src="{% static 'assets/images/logos/altek.svg' %}" alt="altek">
-                    <p>Разработка сайта</p>
+                    <p>Разработка <br> сайта</p>
                 </div>
             </div>
         </div>
@@ -475,7 +488,6 @@
 
 <script src="{% static 'assets/plugins/jquery/jquery.js' %}"></script>
 <script src="{% static 'assets/plugins/bootstrap/bootstrap.js' %}"></script>
-<script src="{% static 'assets/plugins/inputmask/input.mask.js' %}"></script>
 <script src="{% static 'assets/plugins/popup/jquery.magnific-popup.min.js' %}"></script>
 <script src="{% static 'assets/plugins/slider/splide.min.js' %}"></script>
 <script src="{% static 'assets/plugins/uppy/uppy.min.js' %}"></script>
