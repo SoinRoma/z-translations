@@ -156,7 +156,7 @@ function initSelects() {
 
 }
 
-function initFiles() {
+function firstForm() {
     const uppy = new Uppy.Uppy({
         locale: Uppy.locales.ru_RU,
         restrictions: {
@@ -184,15 +184,10 @@ function initFiles() {
         }
     })
 
-
-}
-
-function firstForm() {
     $('.price-form').submit((e) => {
         e.preventDefault()
     })
 }
-
 
 function secondForm() {
     const uppy2 = new Uppy.Uppy({
@@ -241,6 +236,10 @@ function secondForm() {
     })
 }
 
+$("#phone").inputmask({
+   "mask": "+998 dd ddd dd dd"
+});
+
 $(".closeBtn").click(function () {
     $.magnificPopup.close()
 })
@@ -250,7 +249,6 @@ burgerMenu()
 scrollSmooth()
 initSlider()
 initSelects()
-initFiles()
 firstForm()
 secondForm()
 
