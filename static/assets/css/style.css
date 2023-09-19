@@ -102,25 +102,8 @@ body {
     align-items: center;
 }
 
-.header-phone-link {
-    font-family: Manrope, sans-serif;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    margin-right: 40px;
-    text-decoration: none;
-    color: black;
-}
-
-.header-phone-link:hover {
-    text-decoration: none;
-    color: black;
-}
-
 .header-phone-btn {
     display: flex;
-    width: 182px;
     padding: 15px 22px;
     justify-content: center;
     align-items: center;
@@ -133,10 +116,29 @@ body {
     outline: none;
 }
 
+.header-phone-btn span {
+    color: #5F5F5F;
+    text-decoration: none;
+}
+
+.header-phone-btn img {
+    margin-right: 8px;
+}
+
 .header-phone-btn:hover {
     background: #E94D11;
     border: 1px solid #E94D11;
     color: white;
+    text-decoration: none;
+}
+
+.header-phone-btn:hover img {
+    filter: invert(100%) brightness(200%);
+}
+
+.header-phone-btn:hover span{
+    color: #fff;
+    text-decoration: none;
 }
 
 .header-phone-btn:focus {
@@ -1234,15 +1236,15 @@ body {
     color: white;
 }
 
-.modal-btn:focus{
+.modal-btn:focus {
     border: none;
 }
 
-.modal-btn:hover{
+.modal-btn:hover {
     background: #3F3F3F;
-     color: white;
+    color: white;
 }
 
-.error-lang{
+.error-lang {
     color: #e32437;
 }
