@@ -26,12 +26,18 @@ function initSlider() {
             rewind: true,
             pagination: false,
             perPage: 3,
+            breakpoints: {
+                1200: {
+                    perPage: 2,
+                },
+                756: {
+                    perPage: 1,
+                },
+            },
             gap: '60px',
             arrows: false,
-        });
-        const bar = splide.root.querySelector('.my-slider-progress-bar')
+        })
 
-        //attach events to custom buttons
         document.querySelector('.splide_next').addEventListener('click', e => {
             splide.go('+1')
         })
@@ -40,9 +46,10 @@ function initSlider() {
             splide.go('-1')
         })
 
-
+        const bar = splide.root.querySelector('.my-slider-progress-bar')
         splide.on('mounted move', function () {
-            const end = splide.Components.Controller.getEnd() + 3
+            const count = window.innerWidth > 1200 ? 3 :  window.innerWidth > 756 ? 2 : 1
+            const end = splide.Components.Controller.getEnd() + count
             const rate = Math.min((splide.index + 1) / end, 1)
             bar.style.width = String(100 * rate) + '%'
         })
