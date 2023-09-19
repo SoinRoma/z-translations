@@ -34,16 +34,16 @@ body {
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
 }
 
 /*** BASE STYLES ***/
@@ -1102,7 +1102,7 @@ body {
 
 
 .contacts-content {
-    margin: 100px 0;
+    margin: 100px 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1186,7 +1186,8 @@ body {
 .contact-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-bottom: 40px;
+    justify-content: center;
 }
 
 
@@ -1196,16 +1197,13 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+    margin-right: 40px;
 }
 
 
 .altek {
     display: flex;
     align-items: center;
-}
-
-.altek img {
-    margin-right: 15px;
 }
 
 .altek p {
@@ -1215,6 +1213,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+     margin-right: 15px;
 }
 
 
