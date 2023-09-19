@@ -1242,3 +1242,7 @@ body {
     background: #3F3F3F;
      color: white;
 }
+
+.error-lang{
+    color: #e32437;
+}

@@ -193,28 +193,35 @@ function firstForm() {
     $('.price-form').submit((e) => {
         e.preventDefault()
         const file = uppy.getFiles()
-        if (file.length) {
-            const fileID = file[0].id
-            const obj = {
-                name: $('#name').val(),
-                phone: $('#phone').val().replaceAll(' ', ''),
-                email: $('#email').val(),
-                language_from: $('#language_from').val(),
-                language_to: $('#language_to').val(),
-                type: $('#type').val(),
-                file: file[0],
-                social: $('input[name="fav_language"]:checked').val()
-            }
+        if ($('#language_from').val() !== $('#language_to').val()) {
+            if (file.length) {
+                const fileID = file[0].id
+                const obj = {
+                    name: $('#name').val(),
+                    phone: $('#phone').val().replaceAll(' ', ''),
+                    email: $('#email').val(),
+                    language_from: $('#language_from').val(),
+                    language_to: $('#language_to').val(),
+                    type: $('#type').val(),
+                    file: file[0],
+                    social: $('input[name="fav_language"]:checked').val()
+                }
 
-            console.log(obj)
-            uppy.removeFile(fileID)
-            $.magnificPopup.open({
-                items: {
-                    src: '#modal'
-                },
-                type: 'inline'
-            })
+                console.log(obj)
+                $('.error-lang').addClass('d-none')
+                $('.price-form')[0].reset()
+                uppy.removeFile(fileID)
+                $.magnificPopup.open({
+                    items: {
+                        src: '#modal'
+                    },
+                    type: 'inline'
+                })
+            }
+        } else {
+            $('.error-lang').removeClass('d-none')
         }
+
     })
 }
 
