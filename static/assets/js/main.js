@@ -1,5 +1,18 @@
 function burgerMenu() {
+    $('.burger-btn').click(()=>{
+        $('.header').addClass('header-open')
+        $('#overlay').removeClass('d-none')
+    })
 
+    $('.close-btn').click(()=>{
+        $('.header').removeClass('header-open')
+        $('#overlay').addClass('d-none')
+    })
+
+    $('.burger-item').click(()=>{
+        $('.header').removeClass('header-open')
+        $('#overlay').addClass('d-none')
+    })
 }
 
 function scrollSmooth() {

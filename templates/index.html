@@ -37,36 +37,53 @@
     <link rel="stylesheet" href="{% static 'assets/css/response.css' %}?v=2">
 </head>
 <body>
+<div id="overlay" class="d-none"></div>
+
 <main class="main container-site">
     <header class="header">
-        <a href="#" class="logo-link">
-            <img src="{% static 'assets/images/logos/Z-Logo.svg' %}" alt="Z-Logo">
-        </a>
-        <ul class="header-links">
-            <li><a href="#type-section">Виды переводов</a></li>
-            <li><a href="#about-section">
-                <span class="dot"></span>
-                О компании
-            </a></li>
-            <li><a href="#price-section">
-                <span class="dot"></span>
-                Стоимость
-            </a></li>
-            <li><a href="#colab-section">
-                <span class="dot"></span>
-                Сотрудничество
-            </a></li>
-            <li><a href="#contact-section">
-                <span class="dot"></span>
-                Контакты
-            </a></li>
-        </ul>
-        <div class="header-phones">
-            <a href="tel:+998712510558" class="header-phone-btn">
-                <img src="{% static 'assets/images/svg/Phone_Icon.svg' %}" alt="phone-svg">
-                <span>+998 71 251 05 58</span>
+        <div class="d-flex align-items-center justify-content-between w-100">
+            <a href="#" class="logo-link">
+                <img src="{% static 'assets/images/logos/Z-Logo.svg' %}" alt="Z-Logo">
             </a>
+            <ul class="header-links">
+                <li><a href="#type-section">Виды переводов</a></li>
+                <li><a href="#about-section">
+                    <span class="dot"></span>
+                    О компании
+                </a></li>
+                <li><a href="#price-section">
+                    <span class="dot"></span>
+                    Стоимость
+                </a></li>
+                <li><a href="#colab-section">
+                    <span class="dot"></span>
+                    Сотрудничество
+                </a></li>
+                <li><a href="#contact-section">
+                    <span class="dot"></span>
+                    Контакты
+                </a></li>
+            </ul>
+            <div class="header-phones">
+                <a href="tel:+998712510558" class="header-phone-btn">
+                    <img src="{% static 'assets/images/svg/Phone_Icon.svg' %}" alt="phone-svg">
+                    <span>+998 71 251 05 58</span>
+                </a>
+                <div class="burger-btn">
+                    <img src="{% static 'assets/images/svg/Burger.svg' %}" alt="Burger">
+                </div>
+                <div class="close-btn">
+                    <img src="{% static 'assets/images/svg/close-menu.svg' %}" alt="close">
+                </div>
+            </div>
         </div>
+        <ul class="burger-list">
+            <li><a class="burger-item" href="#type-section">Виды переводов</a></li>
+            <li><a class="burger-item" href="#about-section">О компании</a></li>
+            <li><a class="burger-item" href="#price-section">Стоимость</a></li>
+            <li><a class="burger-item" href="#colab-section">Сотрудничество</a></li>
+            <li><a class="burger-item" href="#contact-section">Контакты</a></li>
+        </ul>
     </header>
     <div class="main-wrapper">
         <h1 class="main-title">

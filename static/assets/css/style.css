@@ -33,6 +33,19 @@ body {
     margin-right: 0 !important;
 }
 
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 /*** BASE STYLES ***/
 
 .header {
@@ -44,6 +57,56 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
+}
+
+.header-open {
+    height: 350px;
+    display: block;
+}
+
+.header-open .burger-btn {
+    display: none;
+}
+
+.close-btn {
+    margin-left: 20px;
+    display: none;
+}
+
+.header-open .close-btn {
+    display: block;
+}
+
+.burger-list {
+    margin-top: 30px;
+    display: none;
+    padding: 0;
+    list-style: none;
+}
+
+.burger-list li {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.burger-list a {
+    color: #5F5F5F;
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.burger-list a:hover {
+    color: #5F5F5F;
+    text-decoration: none;
+}
+
+.header-open .burger-list {
+    display: block;
 }
 
 .header-links {
@@ -136,7 +199,7 @@ body {
     filter: invert(100%) brightness(200%);
 }
 
-.header-phone-btn:hover span{
+.header-phone-btn:hover span {
     color: #fff;
     text-decoration: none;
 }
@@ -144,6 +207,12 @@ body {
 .header-phone-btn:focus {
     outline: none;
     border: 1px solid #E94D11;
+}
+
+.burger-btn {
+    cursor: pointer;
+    display: none;
+    margin-left: 20px;
 }
 
 .main-wrapper {
