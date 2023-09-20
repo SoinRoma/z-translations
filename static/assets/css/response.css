@@ -15,6 +15,23 @@
     }
 }
 
+@media screen and (max-width: 1260px) {
+    .partners-bg {
+        background-position: left -20px center;
+        background-size: contain;
+        width: 98%;
+        height: 860px;
+    }
+
+    .second-d1 {
+        width: 19%;
+    }
+
+    .second-d2 {
+        width: 23%;
+    }
+}
+
 @media screen and (max-width: 1190px) {
     .cooperation {
         background-position: right top;
@@ -54,6 +71,7 @@
 
 @media screen and (max-width: 1090px) {
 
+
     .header {
         padding: 0 25px;
     }
@@ -80,12 +98,36 @@
         font-size: 12px;
     }
 
+    .partners-wrapper {
+        height: 959px;
+    }
+
+    .second-d2 {
+        display: none;
+    }
+
+    .partners-logos {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        bottom: -31%;
+    }
+
+    .logo-block {
+        width: 47%;
+        height: 220px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .partners-bg {
+        height: 733px;
+    }
+
     .contacts-content {
         margin: 100px 0 30px;
         display: block;
     }
 }
-
 
 @media screen and (max-width: 880px) {
     .header {
@@ -135,7 +177,44 @@
     }
 }
 
+@media screen and (max-width: 756px) {
+    .partners-wrapper {
+        height: 775px;
+    }
+
+    .partners-bg {
+        height: 646px;
+    }
+
+    .partners-title h1 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .partners-title2 {
+        width: 400px;
+        height: 104px;
+        line-height: 50px;
+    }
+
+    .partners-logos {
+        bottom: -45%;
+    }
+
+    .second-d1 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 576px) {
+    .partners-logos {
+        bottom: -70%;
+    }
+
+    .logo-block {
+        width: 100%;
+    }
+
     .cooperation-name {
         padding-top: 70px;
         font-size: 11px;
@@ -225,6 +304,31 @@
 
     .altek {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .partners-wrapper {
+        height: 570px;
+    }
+
+    .partners-bg {
+        height: 421px;
+    }
+
+    .partners-logos {
+        bottom: -109%;
+    }
+
+    .partners-title h1 {
+        font-size: 35px;
+        line-height: 47px;
+    }
+
+    .partners-title2 {
+        width: 246px;
+        height: 77px;
+        line-height: 50px;
     }
 }
 

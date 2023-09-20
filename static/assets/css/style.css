@@ -654,14 +654,12 @@ body {
     clip-path: polygon(85% 0, 85% 69%, 37% 100%, 37% 68%, 0 75%, 0% 0%);
     width: 503px;
     height: 125px;
-    font-family: 'Manrope', sans-serif;
-    font-size: 80px;
     font-style: normal;
     font-weight: 800;
     display: block;
-    line-height: 66px;
     padding-left: 17px;
     color: white;
+    line-height: 60px;
 }
 
 
