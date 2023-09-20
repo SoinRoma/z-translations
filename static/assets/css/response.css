@@ -25,6 +25,11 @@
         padding: 15px;
         font-size: 12px;
     }
+
+    .contacts-content {
+        margin: 100px 0 30px;
+        display: block;
+    }
 }
 
 
@@ -37,7 +42,7 @@
     }
 
     .header-open {
-       padding: 20px 25px 30px;
+        padding: 20px 25px 30px;
     }
 
     .header-links {
@@ -60,6 +65,42 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    .contact-footer {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-title {
+        width: 227px;
+        height: 61px;
+        font-size: 35px;
+        line-height: 40px;
+        padding-left: 11px;
+        margin-bottom: 20px;
+    }
+
+    .contact-phone {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .contact-address, .contact-detail {
+        font-size: 13px;
+    }
+
+    .contact-company {
+        margin-right: 0;
+    }
+
+    .map {
+        height: 250px;
+    }
+
+    .altek {
+        justify-content: center;
+    }
+}
 
 @media screen and (max-width: 370px) {
     .header-phone-btn {
