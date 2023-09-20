@@ -21,3 +21,4 @@ class Resume(models.Model):
 class ContactInformation(models.Model):
     phone_numbers = models.CharField(max_length=255, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
+    requisites = models.TextField(null=True, blank=True)
