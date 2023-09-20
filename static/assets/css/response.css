@@ -1,3 +1,57 @@
+@media screen and (max-width: 1325px) {
+
+    .coop-left {
+        width: 52%;
+    }
+
+    .hands {
+        top: 22%;
+        width: 90%;
+    }
+
+    .hand-d {
+        top: 457px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .cooperation {
+        background-position: right top;
+    }
+
+    .colab-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .coop-left {
+        width: 100%;
+    }
+
+    .coop-img {
+        width: 100%;
+        position: relative;
+        height: 520px;
+    }
+
+    .hands {
+        top: -60%;
+        width: 1500px;
+        left: -200px;
+    }
+
+    .hand-d {
+        top: 45%;
+        width: 300px;
+        left: 200px;
+    }
+
+    .cooperation-form {
+        padding-bottom: 60px;
+    }
+
+}
+
 @media screen and (max-width: 1090px) {
 
     .header {
@@ -63,9 +117,81 @@
     .main {
         position: relative;
     }
+
+    .cooperation {
+        background-image: none;
+    }
+
+    .hands {
+        top: -25%;
+        width: 1200px;
+        left: -200px;
+    }
+
+    .hand-d {
+        top: 60%;
+        width: 230px;
+        left: 130px;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    .cooperation-name {
+        padding-top: 70px;
+        font-size: 11px;
+    }
+
+    .cooperation-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .steps {
+        margin: 40px 0 40px;
+    }
+
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .step-text {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .cooperation-subtitle {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .form_btn2 {
+        width: 100%;
+        height: 80px;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 20px;
+    }
+
+    .coop-img {
+        width: 100%;
+        position: relative;
+        height: 470px;
+    }
+
+    .hands {
+        top: -17%;
+        width: 976px;
+        left: -245px;
+    }
+
+    .hand-d {
+        top: 59%;
+        width: 179px;
+        left: 40px;
+    }
+
     .contact-footer {
         display: block;
         text-align: center;
@@ -105,5 +231,23 @@
 @media screen and (max-width: 370px) {
     .header-phone-btn {
         display: none
+    }
+
+    .coop-img {
+        width: 100%;
+        position: relative;
+        height: 410px;
+    }
+
+    .hands {
+        top: -11%;
+        width: 808px;
+        left: -215px;
+    }
+
+    .hand-d {
+        top: 62%;
+        width: 148px;
+        left: 4px;
     }
 }

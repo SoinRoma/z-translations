@@ -958,6 +958,11 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    overflow: hidden;
+}
+
+.colab-wrapper{
+    display: flex;
 }
 
 .cooperation-name {
