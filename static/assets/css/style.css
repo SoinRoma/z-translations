@@ -533,6 +533,7 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: 21px;
+    margin-top: 15px;
 }
 
 .about-icon {
@@ -592,16 +593,19 @@ body {
     line-height: 21px;
     max-width: 280px;
     margin-right: 100px;
+    margin-bottom: -15px;
 }
 
 .about-flags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-flags img {
     width: 60px;
     height: 60px;
     margin-right: -10px;
+    margin-bottom: -15px;
 }
 
 .about-b2 {

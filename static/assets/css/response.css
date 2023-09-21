@@ -32,7 +32,21 @@
     }
 }
 
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1195px) {
+
+    .about-first {
+        display: block;
+    }
+
+    .about-first p {
+        margin-bottom: 0;
+    }
+
+    .about-flags {
+        margin-top: 15px;
+    }
+
+
     .price-content {
         flex-direction: column-reverse;
     }
@@ -87,7 +101,6 @@
 
 @media screen and (max-width: 1090px) {
 
-
     .header {
         padding: 0 25px;
     }
@@ -112,6 +125,35 @@
     .header-phone-btn {
         padding: 15px;
         font-size: 12px;
+    }
+
+    .about-wrapper2 {
+        display: block;
+    }
+
+    .about-info {
+        margin-left: 30px;
+    }
+
+    .about-name {
+        padding-top: 10px;
+    }
+
+    .about-two-icons {
+        display: block;
+        margin-right: 0;
+    }
+
+    .about-icon {
+        margin-bottom: 40px;
+    }
+
+    .about-circle {
+        margin-bottom: 15px;
+    }
+
+    .about-two-icons {
+        min-width: 50%;
     }
 
     .partners-wrapper {
@@ -198,6 +240,60 @@
 }
 
 @media screen and (max-width: 767px) {
+    .about-title {
+        width: 245px;
+        height: 83px;
+        font-size: 60px;
+        padding-left: 16px;
+        line-height: 41px;
+    }
+
+    .about-subtitle {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .about-icons {
+        display: block;
+    }
+
+    .about-two-icons {
+        display: block;
+        margin-right: 0;
+    }
+
+    .about-icon {
+        display: flex;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .about-icons h4 {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .about-icons {
+        margin-top: 40px;
+    }
+
+    .about-two-icons {
+        margin-bottom: 40px;
+    }
+
+    .about-text {
+        display: block;
+    }
+
+    .about-text p {
+        max-width: 96%;
+        margin-right: 0;
+    }
+
+    .b2 {
+        margin: 0 60px 0 0;
+    }
+
     .partners-wrapper {
         height: 775px;
     }
@@ -235,6 +331,81 @@
 }
 
 @media screen and (max-width: 576px) {
+
+    .about-wrapper {
+        padding-top: 0;
+        margin: 50px 0 50px;
+        background-position: right center;
+    }
+
+    .about-title {
+        width: 145px;
+        height: 55px;
+        font-size: 35px;
+        padding-left: 12px;
+        line-height: 35px;
+    }
+
+    .about-subtitle {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .about-text p {
+        margin-right: 20px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .about-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-icons h4 {
+        font-size: 14px;
+    }
+
+    .about-flags {
+        margin-top: 40px;
+    }
+
+    .b2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-b2 p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .about-b2 {
+        padding: 40px 0;
+    }
+
+    .slide-list span {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .about-wrapper2 {
+        margin-bottom: 30px;
+        background-position: left top;
+    }
+
+
+    .about-b2 {
+        display: block;
+    }
+
+    .b2 {
+        margin: 0 60px 15px 0;
+    }
 
     .price-form {
 
@@ -417,7 +588,12 @@
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 390px) {
+
+    .about-icon {
+        display: block;
+    }
+
     .header-phone-btn {
         display: none
     }
