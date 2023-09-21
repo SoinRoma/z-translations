@@ -33,6 +33,22 @@
 }
 
 @media screen and (max-width: 1190px) {
+    .price-content {
+        flex-direction: column-reverse;
+    }
+
+    .price-list {
+        width: 100%;
+    }
+
+    .price-form {
+        width: 100%;
+    }
+
+    .price-form-content {
+        margin: auto;
+    }
+
     .cooperation {
         background-position: right top;
     }
@@ -119,6 +135,10 @@
         margin-bottom: 20px;
     }
 
+    .price {
+        margin-top: 400px;
+    }
+
     .partners-bg {
         height: 733px;
     }
@@ -177,7 +197,7 @@
     }
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 767px) {
     .partners-wrapper {
         height: 775px;
     }
@@ -204,9 +224,23 @@
     .second-d1 {
         display: none;
     }
+
+    .phone-block {
+        margin-top: 48px;
+    }
+
+    .radio-content {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 576px) {
+
+    .price-form {
+
+        padding: 45px 25px 25px;
+    }
+
     .partners-logos {
         bottom: -70%;
     }
@@ -238,6 +272,15 @@
     .step-text {
         font-size: 13px;
         line-height: 16px;
+    }
+
+    .price {
+        margin-top: 600px;
+    }
+
+    .price-title {
+        font-size: 40px;
+        line-height: 45px;
     }
 
     .cooperation-subtitle {
@@ -307,7 +350,49 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .price-name {
+        font-size: 11px;
+    }
+
+    .price-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .price-subtitle {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .price-item {
+        padding: 25px;
+    }
+
+    .price-item-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .price-item-text2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .price-form-content label {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
 @media screen and (max-width: 450px) {
+
+    .price {
+        margin-top: 670px;
+    }
+
     .partners-wrapper {
         height: 570px;
     }
