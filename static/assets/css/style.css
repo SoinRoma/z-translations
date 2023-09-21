@@ -243,6 +243,12 @@ body {
 
 .main-content {
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-block{
+    display: flex;
 }
 
 .main-languages-block {

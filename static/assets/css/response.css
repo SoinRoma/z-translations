@@ -1,5 +1,11 @@
 @media screen and (max-width: 1325px) {
 
+    .main-image {
+        max-width: 633px;
+        max-height: 668px;
+        bottom: 0;
+    }
+
     .coop-left {
         width: 52%;
     }
@@ -33,6 +39,22 @@
 }
 
 @media screen and (max-width: 1195px) {
+
+    .main-wrapper {
+        margin-top: 40px;
+        height: 843px;
+        position: relative;
+    }
+
+    .main-image {
+        max-width: 583px;
+        max-height: 594px;
+        bottom: 0;
+    }
+
+    .main-d1 {
+        width: 215px;
+    }
 
     .about-first {
         display: block;
@@ -99,6 +121,35 @@
 
 }
 
+@media screen and (max-width: 1110px) {
+
+    .main-wrapper {
+        height: auto;
+    }
+
+    .main-block {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+
+    .main-content {
+        max-width: 542px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-price-btn {
+        max-width: 526px;
+        width: 100%;
+    }
+
+    .main-image {
+        position: static;
+        height: 586px;
+    }
+}
+
 @media screen and (max-width: 1090px) {
 
     .header {
@@ -125,6 +176,16 @@
     .header-phone-btn {
         padding: 15px;
         font-size: 12px;
+    }
+
+    .main-title {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .main-path {
+        width: 642px;
+        height: 128px;
     }
 
     .splide__track {
@@ -219,7 +280,6 @@
     .main-wrapper {
         margin-top: 0;
         padding-top: 112px;
-        height: 915px;
         position: relative;
     }
 
@@ -340,7 +400,59 @@
     }
 }
 
+@media screen and (max-width: 670px) {
+    .main-path {
+        width: 411px;
+        height: 244px;
+        clip-path: polygon(100% 0, 100% 31%, 64% 32%, 58% 57%, 0 59%, 0% 0%);
+    }
+
+    .main-d2 {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 576px) {
+
+    .main-title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .main-path {
+        width: 376px;
+        height: 88px;
+        clip-path: polygon(100% 0, 100% 60%, 75% 81%, 75% 51%, 0 61%, 0% 0%);
+    }
+
+    .main-subtitle {
+        margin: 30px 0;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .main-language h3 {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .main-language p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .main-language img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-image {
+        height: 470px;
+    }
+
+    .main-d1 {
+        width: 168px;
+    }
 
     .splide__track {
         background: url(../images/slides/slide-bg1.png) no-repeat top left;
@@ -384,8 +496,8 @@
     }
 
     .slide-list li {
-    margin-bottom: 10px;
-}
+        margin-bottom: 10px;
+    }
 
     .about-wrapper {
         padding-top: 0;
@@ -613,7 +725,15 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 455px) {
+
+    .main-image {
+        height: 356px;
+    }
+
+    .main-d1 {
+        width: 131px;
+    }
 
     .price {
         margin-top: 670px;
@@ -643,7 +763,25 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 393px) {
+
+    .main-path {
+        width: 248px;
+        height: 155px;
+        clip-path: polygon(100% 0, 100% 31%, 64% 32%, 58% 57%, 0 59%, 0% 0%);
+    }
+
+    .main-block {
+        margin-bottom: 15px;
+    }
+
+    .main-languages-block {
+        display: block;
+    }
+
+    .main-language {
+        margin-bottom: 20px;
+    }
 
     .about-icon {
         display: block;
