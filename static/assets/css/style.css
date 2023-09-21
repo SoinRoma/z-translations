@@ -360,6 +360,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .slider-title h1 {
@@ -380,6 +381,7 @@ body {
 .slider-btns {
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .splide_prev, .splide_next {

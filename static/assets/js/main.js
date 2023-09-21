@@ -43,7 +43,7 @@ function initSlider() {
                 1200: {
                     perPage: 2,
                 },
-                756: {
+                767: {
                     perPage: 1,
                 },
             },
@@ -61,7 +61,7 @@ function initSlider() {
 
         const bar = splide.root.querySelector('.my-slider-progress-bar')
         splide.on('mounted move', function () {
-            const count = window.innerWidth > 1200 ? 3 :  window.innerWidth > 756 ? 2 : 1
+            const count = window.innerWidth > 1200 ? 3 :  window.innerWidth > 767 ? 2 : 1
             const end = splide.Components.Controller.getEnd() + count
             const rate = Math.min((splide.index + 1) / end, 1)
             bar.style.width = String(100 * rate) + '%'
