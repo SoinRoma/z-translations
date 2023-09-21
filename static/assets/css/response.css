@@ -199,7 +199,7 @@
 @media screen and (max-width: 880px) {
     .header {
         position: absolute;
-        width: 98%;
+        width: 95%;
         z-index: 99;
         background: white;
     }
@@ -245,6 +245,11 @@
 }
 
 @media screen and (max-width: 767px) {
+    .about-wrapper {
+        padding-top: 30px;
+        margin: 70px 0 50px;
+    }
+
     .about-title {
         width: 245px;
         height: 83px;
