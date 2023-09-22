@@ -65,9 +65,9 @@
                 </a></li>
             </ul>
             <div class="header-phones">
-                <a href="tel:+998712510558" class="header-phone-btn">
+                <a href="" class="header-phone-btn">
                     <img src="{% static 'assets/images/svg/Phone_Icon.svg' %}" alt="phone-svg">
-                    <span>+998 71 251 05 58</span>
+                    <span></span>
                 </a>
                 <div class="burger-btn">
                     <img src="{% static 'assets/images/svg/Burger.svg' %}" alt="Burger">
@@ -638,9 +638,11 @@
             contentType: false,
             method: 'GET',
             success: function (data) {
-                $('.contact-phone').text(data[0].phone_numbers)
-                $('.contact-address').text(data[0].address)
-                $('.contact-detail').text(data[0].requisites)
+                $('.contact-phone').html(data[0].phone_numbers)
+                $('.header-phone-btn').attr('href', `tel:${data[0].phone_numbers}`)
+                $('.header-phone-btn span').html(data[0].phone_numbers)
+                $('.contact-address').html(data[0].address)
+                $('.contact-detail').html(data[0].requisites)
             },
             error: function (data) {
                 console.log(data)
