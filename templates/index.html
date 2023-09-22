@@ -33,8 +33,8 @@
     <link rel="stylesheet" href="{% static 'assets/plugins/slider/splide.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/uppy/uppy.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/plugins/popup/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=2">
-    <link rel="stylesheet" href="{% static 'assets/css/response.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}?v=3">
+    <link rel="stylesheet" href="{% static 'assets/css/response.css' %}?v=3">
 </head>
 <body>
 <div id="overlay" class="d-none"></div>
@@ -391,34 +391,44 @@
                     <div class="col-md-6 col-12">
                         <label>c</label>
                         <select id="language_from">
-                            <option value="1" data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">
-                                Английский
-                            </option>
-                            <option value="2" data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">
+                            <option value="Uzbek" selected
+                                    data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">
                                 Узбекский
                             </option>
-                            <option value="3" data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">
+                            <option value="English"
+                                    data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">
+                                Английский
+                            </option>
+                            <option value="Russian"
+                                    data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">
                                 Русский
                             </option>
-                            <option value="4" data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">
+                            <option value="French"
+                                    data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">
                                 Французкий
                             </option>
-                            <option value="5" data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">
+                            <option value="Spanish"
+                                    data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">
                                 Испанский
                             </option>
-                            <option value="6" data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">
+                            <option value="Italian"
+                                    data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">
                                 Итальянский
                             </option>
-                            <option value="7" data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">
+                            <option value="German"
+                                    data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">
                                 Немецкий
                             </option>
-                            <option value="8" data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">
+                            <option value="Korean"
+                                    data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">
                                 Корейский
                             </option>
-                            <option value="9" data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">
+                            <option value="Chinese"
+                                    data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">
                                 Китайский
                             </option>
-                            <option value="10" data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">
+                            <option value="Turkish"
+                                    data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">
                                 Турецкий
                             </option>
                         </select>
@@ -432,34 +442,44 @@
                     <div class="col-md-6 col-12">
                         <label for="language_to">на</label>
                         <select id="language_to">
-                            <option value="1" data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">
-                                Английский
-                            </option>
-                            <option value="2" data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">
+                            <option value="Uzbek"
+                                    data-thumbnail="{% static 'assets/images/flags/select/uz-select.png' %}">
                                 Узбекский
                             </option>
-                            <option value="3" data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">
+                            <option value="English" selected
+                                    data-thumbnail="{% static 'assets/images/flags/select/uk-select.png' %}">
+                                Английский
+                            </option>
+                            <option value="Russian"
+                                    data-thumbnail="{% static 'assets/images/flags/select/ru-select.png' %}">
                                 Русский
                             </option>
-                            <option value="4" data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">
+                            <option value="French"
+                                    data-thumbnail="{% static 'assets/images/flags/select/fr-select.png' %}">
                                 Французкий
                             </option>
-                            <option value="5" data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">
+                            <option value="Spanish"
+                                    data-thumbnail="{% static 'assets/images/flags/select/sp-select.png' %}">
                                 Испанский
                             </option>
-                            <option value="6" data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">
+                            <option value="Italian"
+                                    data-thumbnail="{% static 'assets/images/flags/select/it-select.png' %}">
                                 Итальянский
                             </option>
-                            <option value="7" data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">
+                            <option value="German"
+                                    data-thumbnail="{% static 'assets/images/flags/select/gr-select.png' %}">
                                 Немецкий
                             </option>
-                            <option value="8" data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">
+                            <option value="Korean"
+                                    data-thumbnail="{% static 'assets/images/flags/select/kr-select.png' %}">
                                 Корейский
                             </option>
-                            <option value="9" data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">
+                            <option value="Chinese"
+                                    data-thumbnail="{% static 'assets/images/flags/select/ch-select.png' %}">
                                 Китайский
                             </option>
-                            <option value="10" data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">
+                            <option value="Turkish"
+                                    data-thumbnail="{% static 'assets/images/flags/select/tr-select.png' %}">
                                 Турецкий
                             </option>
                         </select>
@@ -479,8 +499,8 @@
                         <label for="type"><img src="{% static 'assets/images/svg/edit.svg' %}" alt="edit">Тип
                             перевода:</label>
                         <select id="type">
-                            <option value="1" selected>Письменный перевод</option>
-                            <option value="2">Устный перевод</option>
+                            <option value="Письменный перевод" selected>Письменный перевод</option>
+                            <option value="Устный перевод">Устный перевод</option>
                         </select>
                         <div class="lang-select">
                             <button class="btn-select" id="change_select3" type="button"></button>
@@ -500,15 +520,15 @@
                 </div>
                 <div class="radio-content">
                     <div class="radio-item">
-                        <input type="radio" id="radio_phone" name="fav_language" value="1" required>
+                        <input type="radio" id="radio_phone" name="fav_language" value="По телефону" required>
                         <label for="radio_phone">По телефону</label>
                     </div>
                     <div class="radio-item">
-                        <input type="radio" id="radio_tg" name="fav_language" value="2" required>
+                        <input type="radio" id="radio_tg" name="fav_language" value="В Telegram" required>
                         <label for="radio_tg">В Telegram</label>
                     </div>
                     <div class="radio-item">
-                        <input type="radio" id="radio_email" name="fav_language" value="3" required/>
+                        <input type="radio" id="radio_email" name="fav_language" value="На почту" required/>
                         <label for="radio_email">На почту</label>
                     </div>
                 </div>
@@ -578,19 +598,10 @@
     <div class="contacts-content">
         <div class="contact-info">
             <h1 class="contact-title">Контакты</h1>
-            <h3 class="contact-phone">+998 71 251 05 58</h3>
-            <a href="#" class="contact-email">info@uzdm.uz</a>
-            <p class="contact-address">
-                Узбекистан, г. Ташкент,
-                Сергелийский р., Сергели-8 А,
-                офис 12/55
-            </p>
-            <p class="contact-detail">
-                ООО "Таржима Маркази"
-                ИНН 305015277
-                ОКЭД 74300
-                Р/с 20208000100793557001
-            </p>
+            <h3 class="contact-phone"></h3>
+            <a href="mailto:info@uzdm.uz" class="contact-email" target="_blank">info@uzdm.uz</a>
+            <p class="contact-address"></p>
+            <p class="contact-detail"></p>
         </div>
         <div class="map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a8e6223aac9dd0a025d11ca6f90e7387c666f5ff19aa3af0d14c41ac398b4aa&amp;source=constructor"
@@ -616,6 +627,164 @@
 <script src="{% static 'assets/plugins/inputmask/input.mask.js' %}"></script>
 <script src="{% static 'assets/plugins/uppy/uppy.min.js' %}"></script>
 <script src="{% static 'assets/plugins/uppy/ru_RU.min.js' %}"></script>
-<script src="{% static 'assets/js/main.js' %}?v=2"></script>
+<script src="{% static 'assets/js/main.js' %}?v=3"></script>
+
+<script>
+    function getContacts() {
+        $.ajax({
+            headers: {"X-CSRFToken": "{{csrf_token}}"},
+            url: 'api/v1/index/contacts/',
+            processData: false,
+            contentType: false,
+            method: 'GET',
+            success: function (data) {
+                $('.contact-phone').text(data[0].phone_numbers)
+                $('.contact-address').text(data[0].address)
+                $('.contact-detail').text(data[0].requisites)
+            },
+            error: function (data) {
+                console.log(data)
+            }
+        })
+    }
+
+    function firstForm() {
+        const uppy = new Uppy.Uppy({
+            locale: Uppy.locales.ru_RU,
+            restrictions: {
+                maxNumberOfFiles: 1,
+            }
+        })
+        uppy.use(Uppy.Dashboard, {
+            target: '#uppy',
+            inline: true,
+            allowMultipleUploadBatches: false,
+            width: '524px',
+            height: '200px',
+            hideUploadButton: true,
+            hideProgressAfterFinish: true,
+            hideCancelButton: true,
+            disableInformer: true,
+            disableStatusBar: true,
+            disableThumbnailGenerator: true,
+            locale: {
+                strings: {
+                    dropPasteFiles: `
+        Перетащите документ сюда или %{browseFiles} его
+        `
+                }
+            }
+        })
+
+        $('.price-form').submit((e) => {
+            e.preventDefault()
+            const file = uppy.getFiles()
+            if ($('#language_from').val() !== $('#language_to').val()) {
+                if (file.length) {
+                    const requestData = new FormData()
+                    requestData.append('client_name', $('#name').val())
+                    requestData.append('client_phone', $('#phone').val().replaceAll(' ', ''))
+                    requestData.append('client_email', $('#email').val())
+                    requestData.append('from_lang', $('#language_from').val())
+                    requestData.append('to_lang', $('#language_to').val())
+                    requestData.append('transfer_type', $('#type').val())
+                    requestData.append('file', file[0].data)
+                    requestData.append('send_to', $('input[name="fav_language"]:checked').val())
+                    $.ajax({
+                        headers: {"X-CSRFToken": "{{csrf_token}}"},
+                        url: 'api/v1/index/translation/',
+                        processData: false,
+                        contentType: false,
+                        method: 'POST',
+                        data: requestData,
+                        success: () => {
+                            $.magnificPopup.open({
+                                items: {
+                                    src: '#modal'
+                                },
+                                type: 'inline'
+                            })
+                            $('.error-lang').addClass('d-none')
+                            $('.price-form')[0].reset()
+                            uppy.removeFile(file[0].id)
+                        },
+                        error: (data) => {
+                            console.log(data)
+                        }
+                    })
+                }
+            } else {
+                $('.error-lang').removeClass('d-none')
+            }
+
+        })
+    }
+
+    function secondForm() {
+        const uppy = new Uppy.Uppy({
+            locale: Uppy.locales.ru_RU,
+            restrictions: {
+                maxNumberOfFiles: 1,
+            }
+        })
+        uppy.use(Uppy.Dashboard, {
+            target: '#uppy2',
+            inline: true,
+            allowMultipleUploadBatches: false,
+            width: '524px',
+            height: '200px',
+            hideUploadButton: true,
+            hideRetryButton: true,
+            hidePauseResumeButton: true,
+            hideProgressAfterFinish: true,
+            hideCancelButton: true,
+            disableInformer: true,
+            disableStatusBar: true,
+            disableThumbnailGenerator: true,
+            locale: {
+                strings: {
+                    dropPasteFiles: `
+        Перетащите документ сюда или %{browseFiles} его
+        `
+                }
+            }
+        })
+
+        $('.cooperation-form').submit((e) => {
+            e.preventDefault()
+            const file = uppy.getFiles()
+            if (file.length) {
+                const requestData = new FormData()
+                requestData.append('file', file[0].data)
+                $.ajax({
+                    headers: {"X-CSRFToken": "{{csrf_token}}"},
+                    url: 'api/v1/index/resume/',
+                    processData: false,
+                    contentType: false,
+                    method: 'POST',
+                    data: requestData,
+                    success: () => {
+                        const fileID = file[0].id
+                        $.magnificPopup.open({
+                            items: {
+                                src: '#modal'
+                            },
+                            type: 'inline'
+                        })
+                        uppy.removeFile(fileID)
+                    },
+                    error: (data) => {
+                        console.log(data)
+                    }
+                })
+            }
+        })
+    }
+
+    getContacts()
+    firstForm()
+    secondForm()
+
+</script>
 </body>
 </html>

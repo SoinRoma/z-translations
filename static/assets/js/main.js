@@ -1,15 +1,15 @@
 function burgerMenu() {
-    $('.burger-btn').click(()=>{
+    $('.burger-btn').click(() => {
         $('.header').addClass('header-open')
         $('#overlay').removeClass('d-none')
     })
 
-    $('.close-btn').click(()=>{
+    $('.close-btn').click(() => {
         $('.header').removeClass('header-open')
         $('#overlay').addClass('d-none')
     })
 
-    $('.burger-item').click(()=>{
+    $('.burger-item').click(() => {
         $('.header').removeClass('header-open')
         $('#overlay').addClass('d-none')
     })
@@ -61,7 +61,7 @@ function initSlider() {
 
         const bar = splide.root.querySelector('.my-slider-progress-bar')
         splide.on('mounted move', function () {
-            const count = window.innerWidth > 1200 ? 3 :  window.innerWidth > 767 ? 2 : 1
+            const count = window.innerWidth > 1200 ? 3 : window.innerWidth > 767 ? 2 : 1
             const end = splide.Components.Controller.getEnd() + count
             const rate = Math.min((splide.index + 1) / end, 1)
             bar.style.width = String(100 * rate) + '%'
@@ -113,9 +113,9 @@ function initSelects() {
     $('#type_list').html(typeArray)
 
     //Set the button value to the first el of the array
-    $('#change_select1').html(langFromArray[0]).attr('value', '1')
-    $('#change_select2').html(langToArray[0]).attr('value', '1')
-    $('#change_select3').html(typeArray[0]).attr('value', '1')
+    $('#change_select1').html(langFromArray[0]).attr('value', 'Uzbek')
+    $('#change_select2').html(langToArray[1]).attr('value', 'English')
+    $('#change_select3').html(typeArray[0]).attr('value', 'Письменный перевод')
 
 //change button stuff on click
     $('#languages_from_list li').click(function () {
@@ -182,116 +182,6 @@ function initSelects() {
 
 }
 
-function firstForm() {
-    const uppy = new Uppy.Uppy({
-        locale: Uppy.locales.ru_RU,
-        restrictions: {
-            maxNumberOfFiles: 1,
-        }
-    })
-    uppy.use(Uppy.Dashboard, {
-        target: '#uppy',
-        inline: true,
-        allowMultipleUploadBatches: false,
-        width: '524px',
-        height: '200px',
-        hideUploadButton: true,
-        hideProgressAfterFinish: true,
-        hideCancelButton: true,
-        disableInformer: true,
-        disableStatusBar: true,
-        disableThumbnailGenerator: true,
-        locale: {
-            strings: {
-                dropPasteFiles: `
-        Перетащите документ сюда или %{browseFiles} его
-        `
-            }
-        }
-    })
-
-    $('.price-form').submit((e) => {
-        e.preventDefault()
-        const file = uppy.getFiles()
-        if ($('#language_from').val() !== $('#language_to').val()) {
-            if (file.length) {
-                const fileID = file[0].id
-                const obj = {
-                    name: $('#name').val(),
-                    phone: $('#phone').val().replaceAll(' ', ''),
-                    email: $('#email').val(),
-                    language_from: $('#language_from').val(),
-                    language_to: $('#language_to').val(),
-                    type: $('#type').val(),
-                    file: file[0],
-                    social: $('input[name="fav_language"]:checked').val()
-                }
-
-                console.log(obj)
-                $('.error-lang').addClass('d-none')
-                $('.price-form')[0].reset()
-                uppy.removeFile(fileID)
-                $.magnificPopup.open({
-                    items: {
-                        src: '#modal'
-                    },
-                    type: 'inline'
-                })
-            }
-        } else {
-            $('.error-lang').removeClass('d-none')
-        }
-
-    })
-}
-
-function secondForm() {
-    const uppy2 = new Uppy.Uppy({
-        locale: Uppy.locales.ru_RU,
-        restrictions: {
-            maxNumberOfFiles: 1,
-        }
-    })
-    uppy2.use(Uppy.Dashboard, {
-        target: '#uppy2',
-        inline: true,
-        allowMultipleUploadBatches: false,
-        width: '524px',
-        height: '200px',
-        hideUploadButton: true,
-        hideRetryButton: true,
-        hidePauseResumeButton: true,
-        hideProgressAfterFinish: true,
-        hideCancelButton: true,
-        disableInformer: true,
-        disableStatusBar: true,
-        disableThumbnailGenerator: true,
-        locale: {
-            strings: {
-                dropPasteFiles: `
-        Перетащите документ сюда или %{browseFiles} его
-        `
-            }
-        }
-    })
-
-    $('.cooperation-form').submit((e) => {
-        e.preventDefault()
-        const file = uppy2.getFiles()
-        if (file.length) {
-            const fileID = file[0].id
-            $.magnificPopup.open({
-                items: {
-                    src: '#modal'
-                },
-                type: 'inline'
-            })
-
-            uppy2.removeFile(fileID)
-        }
-    })
-}
-
 $("#phone").inputmask({
     "mask": "+998 dd ddd dd dd"
 });
@@ -305,12 +195,3 @@ burgerMenu()
 scrollSmooth()
 initSlider()
 initSelects()
-firstForm()
-secondForm()
-
-
-
-
-
-
-
