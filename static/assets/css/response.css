@@ -152,6 +152,21 @@
 
 @media screen and (max-width: 1090px) {
 
+    .white-popup {
+        padding: 60px;
+        width: 70%;
+    }
+
+    .modal-title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .modal-subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
     .header {
         padding: 0 25px;
     }
@@ -401,6 +416,22 @@
 }
 
 @media screen and (max-width: 670px) {
+
+    .white-popup {
+        padding: 30px;
+        width: 90%;
+    }
+
+    .modal-title {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    .modal-subtitle {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
     .main-path {
         width: 411px;
         height: 244px;
